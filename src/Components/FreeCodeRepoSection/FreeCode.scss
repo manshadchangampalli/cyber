@@ -1,0 +1,85 @@
+@import '../../Styles/variables';
+
+.free-code{
+    width: 100vw;
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    padding: 100px 150px;
+    .bg-spiral{
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        z-index: -1;
+        transform: translate(50%,-50%);
+    }
+    .bg{
+        transform: translate(50%,-50%);
+    }
+    &-container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        z-index: 4;
+        grid-gap: 30px;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: auto auto;
+        .left-sec{
+            width: 300px;
+            position: relative;
+            display: grid;
+            align-content: center;
+            .bg-spiral{
+                position: absolute;
+                left: 0px;
+                top: 0;
+                width: 200px;
+                height: 200px;
+                z-index: -1;
+                transform: translate(-30%,-30%);
+            }
+            h1{
+                font-size: 45px;
+                font-family: $bebas-neue;
+            }
+            button{
+                width: 150px;
+                height: 50px;
+                background: transparent;
+                font-size: 18px;
+                font-family: $poppins;
+                border-radius: 10px;
+                outline: none;
+                border: 2px solid $secondary-color;
+                cursor: pointer;
+                &:hover{
+                border: 2px solid white;
+                    
+                }
+            }
+        }
+        .right-sec{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 30px;
+            p{
+                font-size: 20px;
+                font-family: $montserrat;
+            }
+            .items{                
+                display: grid;
+                grid-gap: 15px;
+                grid-template-columns: auto auto;
+                place-items: center;
+                img{
+                    width: 35px;
+                    height: 35px;
+                    padding: 10px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

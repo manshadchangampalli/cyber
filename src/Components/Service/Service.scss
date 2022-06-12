@@ -1,0 +1,51 @@
+@import '../../Styles/variables';
+
+.service{
+    width: 100vw;
+    height: auto;
+    padding:100px;
+    display: grid;
+    overflow: hidden;
+    position: relative;
+    grid-template-rows: 100px auto;
+    grid-gap: 40px;
+    &-heading{
+        font-size: 70px;
+        font-family: $bebas-neue;
+        letter-spacing: 2px;
+        text-align: center;
+        display: grid;
+        align-items: center;
+    }
+    .services{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        justify-content: center;
+        place-items: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(4,auto);
+        .card{
+            width: 200px;
+            display: grid;
+            position: relative;
+            align-content: center;
+            justify-items: center;
+            height: 200px;
+            grid-gap: 20px;
+            background: #121111;
+            border-radius: 15px;
+            img{
+                width: 70px;
+            }
+            p{
+                font-size: 20px;
+                text-transform: uppercase;
+                width: 160px;
+                text-align: center;
+                font-family: $poppins;
+            }
+        }
+    }
+}

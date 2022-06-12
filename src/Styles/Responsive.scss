@@ -1,0 +1,252 @@
+@import './variables';
+
+
+@media only screen and (max-width:1200px) {
+    .aboutus{
+        padding: 100px 50px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .service .services .card {
+        width: 150px;
+        height: 150px;
+        img{
+            width: 50px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .aboutus-container .aboutus-content{
+        p{
+            font-size: 18px;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+    .aboutus-container img{
+        height: 350px;
+    }
+    .free-code{
+        padding: 100px 50px;
+    }
+    .footer .main .address {
+        max-width: 350px;
+    }
+}
+
+@media only screen and(max-width:940px) {
+    .navbar .nav-items {
+        display: none;
+    }
+    .service .services{
+        grid-template-columns: auto auto;
+        
+    }
+    .service .services .card {
+        width: 200px;
+        height: 200px;
+        img{
+            width: 70px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .aboutus-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        img{
+            justify-self: center;
+        }
+        .aboutus-content {
+        h1{
+            text-align: center;
+            max-width: 100%;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            justify-self: center;
+            width: 150px;
+            height: 50px;
+        }
+        }
+    }
+    .free-code-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+    }
+    .free-code-container .left-sec h1{
+        text-align: center;
+    }
+    .free-code-container .left-sec button {
+        justify-self: center;
+    }
+    .footer .main{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto ;
+        .sm-icons{
+            width: 220px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    .navbar{
+        padding: 0 30px;
+    }
+    .hero .main-section{
+        padding: 0 30px;
+    }
+    .service .services .card {
+        width: 150px;
+        height: 150px;
+        img{
+            width: 50px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .aboutus-two {
+        overflow: hidden;
+        padding: 50px 30px;
+    }
+    .ready-to-see{
+        padding: 50px;
+    }
+    .subscribe {
+        padding: 50px;
+    }
+    .subscribe .email-input{
+        height: 50px;
+        input{
+            padding-right: 110px;
+        }
+    }
+    .subscribe .email-input button{
+        width: 100px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        img{
+            display: none;
+        }
+    }
+    .footer .main{
+        grid-template-areas: "address address"
+                             "home help"
+                             "sm sm";
+        .address{
+            grid-area: address;
+        }
+        .footer-home{
+            grid-area: home;
+        }
+        .footer-help{
+            grid-area: help;
+        }
+    }
+}
+
+@media only screen and(max-width:540px) {
+    .hero .main-section .hero-heading{
+        font-size: 50px;
+    }
+    .navbar .logo img{
+        height: 40px;
+    }
+    .hero .main-section .hero-button{
+        width: 140px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 10px;
+        &::before{
+            width: 30px;
+            height: 30px;
+            border-radius:0 13px 0 0;
+        }
+        &::after{
+            width: 30px;
+            border-radius:0 0 0 13px;
+            height: 30px;
+        }
+    }
+    .service{
+        padding: 30px;
+    }
+    .service-heading{
+        font-size: 50px;
+    }
+    .service .services {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .aboutus-container img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .aboutus{
+        padding: 50px;
+    }
+    .aboutus-two-container .aboutus-card h1 {
+        font-size: 50px;
+    }
+    .aboutus-two-container .aboutus-card p{
+        font-size: 15px;
+    }
+    .free-code-container .left-sec h1{
+        font-size: 30px;
+    }
+    .free-code-container .left-sec button {
+        width: 120px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .free-code-container .right-sec p {
+        font-size: 16px;
+    }
+    .ready-to-see{ 
+        h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+    }
+    .ready-to-see button {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .subscribe {
+        border-radius: 5px;
+        padding: 10px;
+        h1{
+            font-size: 30px;
+        }
+    }
+    .subscribe .email-input{
+        height: 40px;
+        font-size: 15px;
+        input{
+            padding-left:10px;
+            font-size: 15px;
+            padding-right:100px;
+        }
+    }
+    .footer{
+        padding: 20px 10px;
+        .main{
+            .address{
+                font-size: 13px;
+            }
+        }
+    }
+}

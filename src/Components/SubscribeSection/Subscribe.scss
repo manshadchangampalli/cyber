@@ -1,0 +1,58 @@
+@import '../../Styles/variables';
+
+.subscribe{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    padding: 100px 100px 150px 100px;
+    display: grid;
+    @media only screen and (min-width:1400px) {
+        padding: 100px calc((100vw - 1400px)/2);
+    }
+    h1{
+        font-size: 45px;
+        font-family: $bebas-neue;
+        line-height: 0.9;
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: 18px;
+        font-family: $poppins;
+    }
+    .email-input{
+        margin-top: 20px;
+        width: 100%;
+        position: relative;
+        height: 60px;
+        button{
+            width: 200px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: $tirtiory-color;
+            font-size: 18px;
+            font-family: $bebas-neue;
+            outline: none;
+            border: none;
+            border-radius: 0 9px 9px 0;
+            img{
+                width: 50px;
+                padding-left: 10px;
+            }
+        }
+        input{
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            font-size: 18px;
+            font-family: $poppins;
+            padding-left: 30px;
+            color: black;
+            outline: none;
+            height: 100%;
+            padding-right: 210px;
+
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../Styles/variables';
+
+.aboutus-two{
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    height: auto;
+    padding: 100px 150px;
+    &-container{
+        width: 100%;
+        padding: 50px 20px;
+        height: 100%;
+        background: rgba(65, 65, 65, 0.1);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: grid;
+        justify-content: center;
+        border-radius: 10px;
+        align-content: center;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        grid-gap: 20px;
+        z-index: 3;
+        .aboutus-card{
+            max-width:600px;
+            position: relative;
+            height:auto;
+            border-top:2px solid rgb(255, 255, 255);
+            h1{
+                font-size: 70px;
+                font-family: $bebas-neue;
+            }
+            p{
+                width: 90%;
+                font-size: 18px;
+                font-family: $montserrat;
+            }
+            button{
+                outline: none;
+                width: 50px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                height: 50px;
+                background: $tirtiory-color;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                border: none;
+                cursor: pointer;
+                img{
+                    width: 20px;
+                    transition: all .5s ease;
+                }
+                &:hover{
+                    img{
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}

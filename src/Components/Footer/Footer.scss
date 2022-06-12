@@ -1,0 +1,44 @@
+@import '../../Styles/variables';
+
+.footer{
+    width: 100vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.507);
+    height: auto;
+    padding: 30px 0px;
+    background: rgba(0, 0, 0, 0.459) url('../../Assets/Aboutus/aboutusbackground.png') no-repeat center;
+    background-size: cover;
+    display: grid;
+    grid-gap: 30px;
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: $poppins;
+    grid-template-rows: auto 50px;
+    .main{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 35px;
+        .address{
+            display: grid;
+            grid-gap: 30px;
+            grid-template-rows: auto auto;
+            img{
+                width: 100px;
+            }
+        }
+        .footer-home,.footer-help{
+            display: grid;
+            grid-gap: 20px;
+        }
+        .sm-icons{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+            grid-area: sm;
+        }
+    }
+    .copyright{
+        display: grid;
+        place-items: center;
+    }
+}
